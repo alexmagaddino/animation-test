@@ -35,6 +35,7 @@ class ChartActivity: AppCompatActivity(){
             setScaleEnabled(false)
             setPinchZoom(false)
             isDoubleTapToZoomEnabled = false
+            legend.isEnabled = false
         }
     }
 }

@@ -22,7 +22,7 @@ class ChartActivity: AppCompatActivity(){
         val chart = findViewById<LineChart>(R.id.chart)
 
         val entries = List(10) {
-            Entry(it * 3.0f, it * 2.5f)
+            Entry(it.toFloat(), it * 2.5f * Math.random().toFloat())
         }
 
         val lineDataSet = LineDataSet(entries, "Esperimento").apply {

@@ -30,6 +30,11 @@ class ChartActivity: AppCompatActivity(){
             valueTextColor = Color.BLACK
         }
 
-        chart.data = LineData(lineDataSet)
+        chart.apply {
+            data = LineData(lineDataSet)
+            setScaleEnabled(false)
+            setPinchZoom(false)
+            isDoubleTapToZoomEnabled = false
+        }
     }
 }

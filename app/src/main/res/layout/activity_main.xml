@@ -8,8 +8,12 @@
 
     <Button
         android:id="@+id/anim"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
         android:gravity="center"
         android:text="@string/animation"
         android:textSize="15sp"
@@ -17,8 +21,13 @@
 
     <Button
         android:id="@+id/chart"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
         android:text="@string/chart"
         android:textSize="15sp"

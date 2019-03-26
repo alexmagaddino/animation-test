@@ -24,6 +24,7 @@ android {
 
 repositories {
     google()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -37,4 +38,7 @@ dependencies {
 
     //AirBnB libraries for animation
     implementation 'com.airbnb.android:lottie:2.7.0'
+
+    //Chart library
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }

@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">AnimationTest</string>
     <string name="saluto">Ciao</string>
+    <string name="animation">Schermata Animazione</string>
+    <string name="chart">Schermata Grafico</string>
 </resources>

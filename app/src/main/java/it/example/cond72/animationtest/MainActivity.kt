@@ -1,7 +1,9 @@
 package it.example.cond72.animationtest
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.view.View
 import com.airbnb.lottie.LottieAnimationView
 import com.airbnb.lottie.LottieDrawable
 
@@ -13,17 +15,12 @@ class MainActivity: AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        findViewById<View>(R.id.anim).setOnClickListener {
+            startActivity(Intent(this, AnimationActivity::class.java))
+        }
 
-        findViewById<LottieAnimationView>(R.id.animationView)?.apply {
-            setAnimation("lottie.json")
-            repeatCount = LottieDrawable.INFINITE
-            playAnimation()
-            setOnClickListener{
-                (it as LottieAnimationView).also {
-                    if(it.isAnimating) it.pauseAnimation()
-                    else it.resumeAnimation()
-                }
-            }
+        findViewById<View>(R.id.chart).setOnClickListener {
+            startActivity(Intent(this, ChartActivity::class.java))
         }
     }
 

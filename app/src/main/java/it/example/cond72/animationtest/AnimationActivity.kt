@@ -14,7 +14,6 @@ class AnimationActivity: AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_animation)
 
-        setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar?.setHomeButtonEnabled(true)
 
         findViewById<LottieAnimationView>(R.id.animationView)?.apply {

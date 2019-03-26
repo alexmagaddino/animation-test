@@ -17,7 +17,6 @@ class ChartActivity: AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chart)
 
-        setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar?.setHomeButtonEnabled(true)
 
         val chart = findViewById<LineChart>(R.id.chart)

@@ -46,4 +46,7 @@ dependencies {
 
     //Chart library
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //Crash mega library
+    implementation 'com.github.TutorialsAndroid:crashx:v0.1'
 }

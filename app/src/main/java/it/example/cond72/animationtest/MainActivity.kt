@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import com.kinda.crash.config.CrashConfig
 
 /**
  * Created by alexm on 25/03/2019

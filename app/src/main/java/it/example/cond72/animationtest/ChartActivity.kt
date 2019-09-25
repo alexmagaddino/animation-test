@@ -11,7 +11,7 @@ import com.github.mikephil.charting.data.LineDataSet
 /**
  * Created by alexm on 26/03/2019
  */
-class ChartActivity: AppCompatActivity(){
+class ChartActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +33,12 @@ class ChartActivity: AppCompatActivity(){
         chart.apply {
             data = LineData(lineDataSet)
             setScaleEnabled(false)
+            setDrawGridBackground(false)
             setPinchZoom(false)
+            xAxis.setDrawLabels(false)
+            xAxis.disableGridDashedLine()
+            axisLeft.setDrawLabels(false)
+            axisRight.setDrawLabels(false)
             isDoubleTapToZoomEnabled = false
             legend.isEnabled = false
         }

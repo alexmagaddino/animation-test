@@ -8,7 +8,7 @@ import com.airbnb.lottie.LottieDrawable
 /**
  * Created by alexm on 26/03/2019
  */
-class AnimationActivity: AppCompatActivity(){
+class AnimationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,10 +20,10 @@ class AnimationActivity: AppCompatActivity(){
             setAnimation("lottie.json")
             repeatCount = LottieDrawable.INFINITE
             playAnimation()
-            setOnClickListener{
-                (it as LottieAnimationView).also {
-                    if(it.isAnimating) it.pauseAnimation()
-                    else it.resumeAnimation()
+            setOnClickListener {
+                (it as LottieAnimationView).also { lottie ->
+                    if (lottie.isAnimating) lottie.pauseAnimation()
+                    else lottie.resumeAnimation()
                 }
             }
         }

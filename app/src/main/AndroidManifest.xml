@@ -11,18 +11,23 @@
         android:theme="@style/AppTheme"
         android:screenOrientation="portrait">
         <activity android:name=".MainActivity" android:screenOrientation="portrait">
-        <intent-filter>
-            <!-- MAIN represents that it is the Main Activity-->
-            <action android:name="android.intent.action.MAIN" />
-            <!-- Launcher Denotes that it will be the first launching activity-->
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+
         </activity>
         <activity android:name=".AnimationActivity"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".ChartActivity"
             android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <!-- MAIN represents that it is the Main Activity-->
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <!-- Launcher Denotes that it will be the first launching activity-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
     </application>
 </manifest>

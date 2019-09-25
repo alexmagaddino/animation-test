@@ -8,7 +8,7 @@ import android.view.View
 /**
  * Created by alexm on 25/03/2019
  */
-class MainActivity: AppCompatActivity(){
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +21,6 @@ class MainActivity: AppCompatActivity(){
             startActivity(Intent(this, ChartActivity::class.java))
         }
 
-        throw RuntimeException("Ecca sangooo")
+//        throw RuntimeException("Ecca sangooo")
     }
 }

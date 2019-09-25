@@ -6,7 +6,7 @@ import com.kinda.crash.config.CrashConfig
 /**
  * Created by alexm on 01/04/2019
  */
-class TestApplication: Application(){
+class TestApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
